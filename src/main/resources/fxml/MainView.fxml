@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="br.com.seuapp.controller.MainController"
+            stylesheets="@../css/app.css">
+
+    <top>
+        <MenuBar>
+            <Menu text="Cadastros">
+                <MenuItem fx:id="menuCursos"      text="Cursos"/>
+                <MenuItem fx:id="menuDisciplinas" text="Disciplinas"/>
+                <MenuItem fx:id="menuProfessores" text="Professores"/>
+                <MenuItem fx:id="menuTurmas"      text="Turmas"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <StackPane fx:id="bodyPane"/>
+    </center>
+</BorderPane>

@@ -1,0 +1,58 @@
+/* Root */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+}
+
+/* MenuBar */
+.menu-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c0c0c0;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-background-radius: 4px;
+    -fx-padding: 6 12;
+}
+.button:hover {
+    -fx-background-color: #2563eb;
+}
+
+/* TextInputControls */
+.text-field,
+.combo-box,
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: #c0c0c0;
+    -fx-background-radius: 4px;
+    -fx-padding: 4 8;
+}
+
+/* TableView */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #c0c0c0;
+    -fx-border-radius: 4px;
+}
+.table-view .column-header-background {
+    -fx-background-color: #3b82f6;
+}
+.table-view .column-header,
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.table-view .cell {
+    -fx-border-color: #e5e7eb;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #334155;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.com.seuapp.controller.ProfessorController"
+      spacing="10"
+      alignment="TOP_CENTER"
+      styleClass="root">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <GridPane hgap="10" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="25"/>
+            <ColumnConstraints percentWidth="75"/>
+        </columnConstraints>
+
+        <Label text="Nome:"      GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtNome"       GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="E-mail:"     GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtEmail"      GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Formação:"  GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtFormacao"   GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <HBox spacing="10"
+              GridPane.rowIndex="3" GridPane.columnIndex="1"
+              alignment="CENTER_RIGHT">
+            <Button fx:id="btnSalvar"  text="Salvar"    maxWidth="Infinity"/>
+            <Button fx:id="btnEditar"  text="Editar"    disable="true" maxWidth="Infinity"/>
+            <Button fx:id="btnExcluir" text="Excluir"   disable="true" maxWidth="Infinity"/>
+        </HBox>
+    </GridPane>
+
+    <TableView fx:id="tableProfessores" prefHeight="250" prefWidth="700">
+        <columns>
+            <TableColumn fx:id="colNome"      text="Nome"      prefWidth="200"/>
+            <TableColumn fx:id="colEmail"     text="E-mail"    prefWidth="250"/>
+            <TableColumn fx:id="colFormacao"  text="Formação"  prefWidth="250"/>
+        </columns>
+    </TableView>
+</VBox>
